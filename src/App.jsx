@@ -1,7 +1,7 @@
 import { Link, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import useReducerA from "./components/useReducerA";
-// import useReducerB from "./components/useReducerB";
+import useReducerB from "./components/useReducerB";
 // import Parent from "./components/Parent";
 
 function App() {
@@ -38,8 +38,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/useReducerA" component={useReducerA} />
-        {/* <Route path="/useReducerB" component={useReducerB} />
-        <Route path="/useContextA" component={Parent} /> */}
+        <Route path="/useReducerB" component={useReducerB} />
+        {/* <Route path="/useContextA" component={Parent} /> */}
       </Switch>
     </div>
   );
